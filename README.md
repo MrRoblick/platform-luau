@@ -8,6 +8,6 @@ const ReplicatedFirst = game:GetService("ReplicatedFirst")
 const Modules = ReplicatedFirst.Modules
 const Platform = require(Modules.Platform)
 
-local UserPlatform, Architecture = Platform.GetPlatform()
+const UserPlatform, Architecture = Platform.GetPlatform()
 print(`{UserPlatform.Name} x{Architecture}`)
 ```
