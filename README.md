@@ -1,5 +1,5 @@
 # Api
-```
+```luau
 @checked function Platform.GetPlatform(): (Enum.Platform, number) -- returns Platform and Architecture
 ```
 # Example
