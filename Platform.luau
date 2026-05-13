@@ -26,7 +26,7 @@ end
 	return Size.Magnitude ~= NonCharacterSize.Magnitude
 end
 
-local Platform = {}
+const Platform = {}
 const Architecture = GetArchitecture()
 
 @checked function Platform.GetPlatform(): (Enum.Platform, number)
