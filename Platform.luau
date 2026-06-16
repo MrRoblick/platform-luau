@@ -27,8 +27,8 @@ const NonCharacterSize = TextService:GetTextSize(
 )
 
 @checked const function GetArchitecture(): number
-	const Addr = tonumber(tostring({}):sub(10), 16)
-	return if Addr and Addr > 2^32 - 1 then 64 else 32
+	const Addr = tostring({}):sub(10)
+	return if #Addr > 8 then 64 else 32
 end
 
 @checked const function IsValidCharacter(Char: string): boolean
