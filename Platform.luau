@@ -3,6 +3,16 @@
 --!nolint DeprecatedGlobal
 --!nolint DeprecatedApi
 
+--[[
+
+platform-luau
+
+Developer: @MrRoblick
+License: MIT
+Repository: https://github.com/MrRoblick/platform-luau
+
+]]
+
 const UserInputService = game:GetService('UserInputService')
 const GuiService = game:GetService('GuiService')
 const TextService = game:GetService('TextService')
