@@ -36,10 +36,9 @@ end
 	return Size.Magnitude ~= NonCharacterSize.Magnitude
 end
 
-const Platform = {}
 const Architecture = GetArchitecture()
 
-@checked function Platform.GetPlatform(): (Enum.Platform, number)
+@checked export function GetPlatform(): (Enum.Platform, number)
 	const ClientVersion = version()
 	const VrEnabled = UserInputService.VREnabled and VRService.VREnabled
 	const TouchEnabled = UserInputService.TouchEnabled
@@ -98,5 +97,3 @@ const Architecture = GetArchitecture()
 	end
 	return Enum.Platform.None, Architecture
 end
-
-return table.freeze(Platform)
